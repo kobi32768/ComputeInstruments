@@ -1,12 +1,7 @@
 package io.github.kobi32768.computeinstruments
 
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.block.Block
-import net.minecraft.block.SoundType
-import net.minecraft.block.material.Material
-import net.minecraftforge.common.ToolType
+import io.github.kobi32768.computeinstruments.blocks.Relay
 import net.minecraftforge.eventbus.api.IEventBus
-import net.minecraftforge.eventbus.api.SubscribeEvent
 import net.minecraftforge.registries.DeferredRegister
 import net.minecraftforge.registries.ForgeRegistries
 
@@ -16,16 +11,7 @@ class Blocks {
             ForgeRegistries.BLOCKS,
             ComputeInstruments.MOD_ID)
 
-        val RELAY = BLOCKS.register("relay") {
-            Block(AbstractBlock.Properties
-                .create(Material.IRON)
-                .setRequiresTool()
-                .hardnessAndResistance(5.0f, 6.0f)
-                .sound(SoundType.METAL)
-                .harvestTool(ToolType.PICKAXE)
-                .harvestLevel(1)
-            )
-        }!!
+        val RELAY = BLOCKS.register("relay") { Relay }!!
 
         fun register(eventBus: IEventBus) {
             BLOCKS.register(eventBus)

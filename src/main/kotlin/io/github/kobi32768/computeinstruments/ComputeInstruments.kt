@@ -9,6 +9,10 @@ class ComputeInstruments {
         const val MOD_ID = "computeinstruments"
     }
 
+    init {
+        ComputeInstruments()
+    }
+
     fun ComputeInstruments() {
         val modEventBus = FMLJavaModLoadingContext.get().modEventBus
         Blocks.register(modEventBus)
