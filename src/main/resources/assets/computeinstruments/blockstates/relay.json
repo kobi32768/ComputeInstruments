@@ -1,0 +1,19 @@
+{
+    "variants": {
+        "facing=north": {
+            "model": "computeinstruments:block/relay",
+            "y": 270
+        },
+        "facing=south": {
+            "model": "computeinstruments:block/relay"
+        },
+        "facing=east": {
+            "model": "computeinstruments:block/relay",
+            "y": 90
+        },
+        "facing=west": {
+            "model": "computeinstruments:block/relay",
+            "y": 180
+        }
+    }
+}

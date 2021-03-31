@@ -17,7 +17,7 @@ class Items {
 
         val RELAY = ITEMS.register("relay") {
             BlockItem(Blocks.RELAY.get(), Item.Properties()
-                .group(ItemGroup.REDSTONE))
+                .group(ComputeInstruments.TAB))
         }!!
 
         fun register(eventBus: IEventBus) {

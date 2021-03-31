@@ -1,0 +1,12 @@
+{
+    "parent": "block/cube",
+    "textures": {
+        "particle": "computeinstruments:block/relay_side",
+        "north": "computeinstruments:block/relay_line",
+        "south": "computeinstruments:block/relay_line",
+        "east": "computeinstruments:block/relay_line",
+        "west": "computeinstruments:block/relay_side",
+        "up": "computeinstruments:block/relay_top",
+        "down": "computeinstruments:block/relay_top"
+    }
+}

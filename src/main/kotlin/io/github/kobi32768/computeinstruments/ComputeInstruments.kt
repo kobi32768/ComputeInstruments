@@ -7,6 +7,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext
 class ComputeInstruments {
     companion object {
         const val MOD_ID = "computeinstruments"
+        val TAB = CIGroup(MOD_ID)
     }
 
     init {
